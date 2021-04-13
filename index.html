@@ -11,45 +11,68 @@
         background: rgb(42, 42, 42);
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         color: aliceblue;
-        display: grid;
+        display: block;
         align-items: center;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        padding: 10px;
     }
-
+        div{
+            padding: 10px;
+            width: 95.5vw;
+          
+            display: grid;
+            text-align: center;
+            justify-content: center;
+        }
     input{
         margin-top: 5%;
-        width: 30%;
         outline: none;
         font-size: 18px;
         padding: 5px;
     }
     button{
-        width: 31%;
+        margin-top: 5px;
         outline: none;
         font-size: 16px;
+        height: 36px;
         text-transform: uppercase;
         background-color: rgb(70, 70, 70);
         padding: 5px;
         border: none;
-        color: cornsilk;
+        color: aliceblue;
         cursor: pointer;
+        transition: all .3s ease;
+
     }
-   #p{
+    button:hover{
+        color: rgb(70, 70, 70);
+        background-color: aliceblue;
+    }
+    ul{
+        text-align: left;
+    }
+       #p{
        font-size: 21px;
        margin-left: 0.3%;
    }
 </style>
 <body>
-    <h1>Lemmatizer</h1>
-    <input type="text" id="input">
-    <button>കണ്ടെത്തുക</button>
-    <p id="p"> output</p>
-    <p> <em>അറിവിൽ പെട്ടിട്ടുള്ള കുറവുകൾ</em></p> <br>
-    <ul>
-        <li>രണ്ടു വാക്കുകൾ ഒരുമിച്ചു ഇടാൻ കഴിയില്ല.</li>
-        <li>നിലവിൽ ഇരട്ട വാക്കുകളുടെ വേരു മുറ്റുമേ ഇത് കാണിക്കുകയുള്ളു.</li>
-        <li>ഇത് മുഴുവഩായിട്ടില്ല.</li>
-        <li>എന്തെങ്കിലും പിഴവുകൾ കണ്ടെത്തുക ആണെങ്കിൽ അവ അറിയിക്കുക.</li>
-    </ul>
+   
+    <div>
+        <h1>പിരിവകം</h1>
+        <input type="text" id="input">
+        <button>കണ്ടെത്തുക</button>
+        <p id="p">പുറത്തൂട്ട്</p>
+        <p> <em>അറിവിൽ പെട്ടിട്ടുള്ള കുറവുകൾ</em></p> <br>
+        <ul>
+            <li>രണ്ടു വാക്കുകൾ ഒരുമിച്ചു ഇടാൻ കഴിയില്ല.</li>
+            <li>നിലവിൽ ഇരട്ട വാക്കുകളുടെ വേരു മുറ്റുമേ ഇത് കാണിക്കുകയുള്ളു.</li>
+            <li>ഇത് മുഴുവഩായിട്ടില്ല.</li>
+            <li>എന്തെങ്കിലും പിഴവുകൾ കണ്ടെത്തുക ആണെങ്കിൽ അവ അറിയിക്കുക.</li>
+        </ul>
+    </div>
+  
     <script src="./lemma.js"></script>
 </body>
 </html>
