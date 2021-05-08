@@ -30,11 +30,15 @@
         outline: none;
         font-size: 18px;
         padding: 5px;
+        border-color: rgba(158, 158, 158, 0);
+        border-radius: 30px;
     }
     button{
-        margin-top: 5px;
+        margin-top: 10px;
         outline: none;
         font-size: 16px;
+        border-color: rgba(158, 158, 158, 0);
+        border-radius: 30px;
         height: 36px;
         text-transform: uppercase;
         background-color: rgb(70, 70, 70);
@@ -46,8 +50,10 @@
 
     }
     button:hover{
-        color: rgb(70, 70, 70);
-        background-color: aliceblue;
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 136, 255);
+        font-size: larger;
+        letter-spacing: 2px;
     }
     ul{
         text-align: left;
@@ -64,15 +70,16 @@
         <input type="text" id="input">
         <button>കണ്ടെത്തുക</button>
         <p id="p">പുറത്തൂട്ട്</p>
+        <h3>type</h3>
         <p> <em>അറിവിൽ പെട്ടിട്ടുള്ള കുറവുകൾ</em></p> <br>
+        
         <ul>
             <li>രണ്ടു വാക്കുകൾ ഒരുമിച്ചു ഇടാൻ കഴിയില്ല.</li>
-            <li>നിലവിൽ ഇരട്ട വാക്കുകളുടെ വേരു മുറ്റുമേ ഇത് കാണിക്കുകയുള്ളു.</li>
             <li>ഇത് മുഴുവഩായിട്ടില്ല.</li>
             <li>എന്തെങ്കിലും പിഴവുകൾ കണ്ടെത്തുക ആണെങ്കിൽ അവ അറിയിക്കുക.</li>
         </ul>
     </div>
   
-    <script src="./lemma.js"></script>
+    <script src="./lemmatiser.js"></script>
 </body>
 </html>
